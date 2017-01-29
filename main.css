@@ -1,0 +1,109 @@
+.transition,
+form button,
+form .question label,
+form .question input[type="text"] {
+-moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+-o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+-webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+}
+
+* {
+font-family: 'Arsenal', sans-serif !important;
+-webkit-font-smoothing: antialiased;
+}
+
+html {
+background-color: #2980B9;
+margin-top: 25px;
+}
+
+.titulo
+{
+    color: #2C3E50;
+    font-size: 50px;
+}
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+ font-size: 1em;
+ color: #2C467F;
+ top: -2.25rem;
+ -webkit-transition: all 0.125s ease;
+ transition: all 0.125s ease;
+}
+
+.styled-input {
+  float: left;
+  width: 33.3333%;
+  margin: 2rem 0 1rem;
+  position: relative;
+}
+
+.styled-input label {
+  color: #163C7F;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 100%;
+    font-size: 1.3em;
+    color: #2C3E50;
+}
+
+.btn{
+    background-color: #2980B9 !important;
+    color: #fff;
+}
+
+.btn:hover{
+    background-color: #38A3EB !important;
+    color: #fff !important;
+}
+
+.btncambiar{
+    background-color: #2980B9 !important;
+}
+
+
+input,
+textarea {
+  padding: 1rem 1rem;
+  border: 0;
+  width: 100%;
+  font-size: 1rem;
+  resize: none;
+}
+
+input ~ span,
+textarea ~ span {
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #2C467F;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all 0.125s ease;
+  transition: all 0.125s ease;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+  width: 100%;
+  -webkit-transition: all 0.075s ease;
+  transition: all 0.075s ease;
+}
+
+textarea {
+  width: 100%;
+  min-height: 15em;
+}

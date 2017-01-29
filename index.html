@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Convertir las I</title>
+        <meta name="description" content="Una aplicación para convertir las vocales por la vocal i">
+        <script src="https://use.fontawesome.com/da5d206900.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Arsenal" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+
+<body>
+    <div class="titulo"><center>Cambiar Vocales</center></div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="styled-input wide">
+                  <textarea class="aConvertir" id="texto" required></textarea>
+                  <label>Ingresa tu texto aquí:</label>
+                  <span></span> 
+                </div>
+                <div class="styled-input wide">
+                  <textarea class="convertido" id="textoconvertido" readonly required></textarea>
+                  <label>Tu texto convertido estará aquí:</label>
+                  <span></span> 
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-default btn-lg" onclick="cambiar()" id="btncambiar"> Convertir </button>
+    </div>
+    <center>Kabs 2017 ©</center>
+</body>
+
+</html>
